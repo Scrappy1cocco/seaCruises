@@ -1,0 +1,22 @@
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="UTF-8")
+    title #{title}
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    meta(content="", name="description")
+    meta(content="", name="keywords")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(content="telephone=no", name="format-detection")
+
+//- для индивидуализации боди
+body(class=pageClass)
+  .wrapper
+    //- include ../header
+    .content
+      block content
+    //- include ../footer
+  block script
+  
