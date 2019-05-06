@@ -83,6 +83,11 @@ gulp.task('imgBuild', function() {
         .pipe(gulp.dest('build/static/img/'))
 });
 
+gulp.task("fonts", function() {
+  return gulp.src(["src/fonts/*.woff", "src/fonts/*.woff2"])
+  .pipe(gulp.dest("build/fonts"))
+}); //перенос шрифтов в Public
+
 gulp.task('serve', function() {
 	browseReload.init({
 		server: "./build"
@@ -112,6 +117,6 @@ gulp.task('default', gulp.series(
 ));
 
 gulp.task('build', gulp.series(
-	gulp.parallel('pug', 'sass', 'scriptsLib', 'scripts', 'imgBuild'),
+	gulp.parallel('pug', 'sass', 'scriptsLib', 'scripts', 'imgBuild', 'fonts'),
 	gulp.parallel('watch', 'serve')
 ));

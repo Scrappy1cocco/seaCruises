@@ -1,13 +1,3 @@
-@import 'libs';
-
-.slider {
-	background-color: lightblue;
-	width: 700px;
-}
-
-.slider-item {
-	background-color: #ccc;
-	width: 400px;
-	height: 200px;
-	margin-left: 20px;
-}
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/commons";
