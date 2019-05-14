@@ -1,0 +1,11 @@
+@mixin above($width) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin below($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}

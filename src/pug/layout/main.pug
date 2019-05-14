@@ -1,3 +1,6 @@
+include ../blocks/header
+include ../blocks/footer
+
 block variables
 
 doctype html
@@ -10,13 +13,12 @@ html(lang="ru-RU")
     meta(content="", name="keywords")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(content="telephone=no", name="format-detection")
-
+    link(rel="stylesheet", type="text/css" href="static/css/main.css")
 //- для индивидуализации боди
 body
-  .wrapper
-    //- include ../header
+  +header
     .content
       block content
-    //- include ../footer
+  +footer
   block script
   
