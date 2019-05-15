@@ -1,5 +1,12 @@
 .header {
-	width: 300px;
+	width: 80%;
 	height: 400px;
+	margin: 0 auto;
 	background-color: lightgreen;
+	@include below($screen-tablet) {
+		background-color: grey;
+	}
+	@include below($screen-mobile) {
+		background-color: lightblue;
+	}
 }
