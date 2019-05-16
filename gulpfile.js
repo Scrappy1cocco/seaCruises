@@ -69,23 +69,23 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('imgDev', function() {
-	return gulp.src('src/static/img/*.+(jpg|jpeg|png|gif)')
-        .pipe(gulp.dest('build/static/img/'))
+	return gulp.src('src/static/img/**/*.+(jpg|jpeg|png|gif)')
+        .pipe(gulp.dest('build/static/img'))
 });
 
 gulp.task('imgBuild', function() {
-	return gulp.src('src/static/img/*.+(jpg|jpeg|png|gif)')
+	return gulp.src('src/static/img/**/*.+(jpg|jpeg|png|gif)')
 	    .pipe(imagemin([
 	    	mozjpeg({
 	    		quality: 65
 	    	})
 	]))
-        .pipe(gulp.dest('build/static/img/'))
+        .pipe(gulp.dest('build/static/img'))
 });
 
 gulp.task("fonts", function() {
-  return gulp.src(["src/fonts/*.woff", "src/fonts/*.woff2"])
-  .pipe(gulp.dest("build/fonts"))
+  return gulp.src(["src/static/fonts/*.woff", "src/static/fonts/*.woff2"])
+  .pipe(gulp.dest("build/static/fonts"))
 }); //перенос шрифтов в Public
 
 gulp.task('serve', function() {

@@ -3,7 +3,10 @@ html {
   height: 100%;
 }
 
-body { height: 100%; }
+body {
+  height: 100%;
+  margin: 0;
+}
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
@@ -47,4 +50,10 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content-size;
   width: 100%;
+  @include above($screen-tablet) {
+    max-width: $content-size-tablet;
+  }
+  @include above($screen-desktop) {
+    max-width: $content-size-desktop;
+  }
 }

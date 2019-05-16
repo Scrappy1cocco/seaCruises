@@ -1,12 +1,41 @@
 .header {
-	width: 80%;
-	height: 400px;
-	margin: 0 auto;
-	background-color: lightgreen;
-	@include below($screen-tablet) {
-		background-color: grey;
+	width: 100%;
+	height: 583px;
+	background: url('../img/bg/bg-mobile.jpg') 50% 0 no-repeat;
+		@include above($screen-tablet) {
+		height: 600px;
+		background-image: url('../img/bg/bg-tablet.jpg');
 	}
-	@include below($screen-mobile) {
-		background-color: lightblue;
+	&__top {
+		padding-top: 26px;
+	}
+	&__toggle {
+		position: absolute;
+		display: block;
+		top: 27px;
+		width: 22px;
+		height: 16px;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 22px;
+			height: 2px;
+			background-color: #4b6d8a;
+		  box-shadow: 0 6px 0 0 #4b6d8a,
+		              0 12px 0 0 #4b6d8a;
+		}
+	}
+	&__logo-picture {
+		display: block;
+		margin: 0 auto;
+	}
+	&__title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'RobotoSlabRegular';
 	}
 }

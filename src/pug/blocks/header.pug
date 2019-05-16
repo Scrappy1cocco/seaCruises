@@ -2,6 +2,16 @@ mixin header
 
   header.header
     .header__top
-      .header__nav
-      .header__pannel
+      .container
+        .header__nav.nav
+          a.header__toggle(href="#")
+        .header__pannel.pannel
+    .header__main
+      .container
+        .header__logo
+          img.header__logo-picture(src="static/img/icons/logo.png" width='70' height='70' alt='Логотип')
+        .header__title.title
+          span.title__prew Морские прогулки
+          h1.title__main По черному морю
+
     
