@@ -36,6 +36,31 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: 'RobotoSlabRegular';
+		font-family: RobotoSlabRegular;
+		.title__prew {
+			font-size: 20px;
+			line-height: 48px;
+			font-weight: 400;
+			color: #0d3351;
+		}
+		.title__main {
+			font-size: 50px;
+			line-height: 48px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+			color: #0d3351;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		width: 202px;
+		height: 47px;
+		font-size: 14px;
+		color: #fff;
+		text-decoration: none;
+		font-family: Raleway;
+		font-weight: 400;
+		background-color: #33c7fd;
 	}
 }
