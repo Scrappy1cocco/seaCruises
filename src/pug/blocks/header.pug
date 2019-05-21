@@ -1,10 +1,10 @@
-mixin header
+include ../small_blocks/nav
 
+mixin header
   header.header
     .header__top
       .container
-        .header__nav.nav
-          a.header__toggle(href="#")
+        +navig('header__nav','header__toggle')
         .header__pannel.pannel
     .header__main
       .container
@@ -14,5 +14,7 @@ mixin header
           span.title__prew Морские прогулки
           h1.title__main По черному морю
         a.header__btn.btn(href="#") Выбрать круиз
+        .header__track
+          img.header__track-image(src="static/img/icons/dashed.png")
 
     

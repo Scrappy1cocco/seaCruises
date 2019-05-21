@@ -44,6 +44,7 @@
 			color: #0d3351;
 		}
 		.title__main {
+			margin-bottom: 40px;
 			font-size: 50px;
 			line-height: 48px;
 			font-weight: 400;
@@ -52,8 +53,12 @@
 			color: #0d3351;
 		}
 	}
+	// сделать отдельным блоком
 	&__btn {
-		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
 		width: 202px;
 		height: 47px;
 		font-size: 14px;
@@ -62,5 +67,15 @@
 		font-family: Raleway;
 		font-weight: 400;
 		background-color: #33c7fd;
+	}
+	&__track {
+		position: relative;
+		width: 130px;
+		margin: 0 auto;
+		&-image {
+			position: absolute;
+			top: 8px;
+			left: -8px;
+		}
 	}
 }
