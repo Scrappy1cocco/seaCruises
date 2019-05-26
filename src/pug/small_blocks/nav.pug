@@ -1,6 +1,6 @@
-mixin navig(nav_class, toggle_class)
-  nav.nav(class= nav_class)
-    a(href="#" class= toggle_class)
+mixin navig(nav_class)
+  nav.nav.nav--closed(class= nav_class)
+    a.toggle(href="#")
     ul.nav__list
       li
         a(href="#").nav__link Популярные маршруты

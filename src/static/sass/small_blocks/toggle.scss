@@ -1,0 +1,51 @@
+.nav--opened {
+  .toggle {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background-color: #4b6d8a;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background-color: #4b6d8a;
+      transform: rotate(-45deg);
+    }
+  }
+}
+.toggle {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background-color: #4b6d8a;
+      box-shadow: 0 6px 0 0 #4b6d8a,
+                  0 12px 0 0 #4b6d8a;
+    }
+  }

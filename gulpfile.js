@@ -84,7 +84,7 @@ gulp.task('imgBuild', function() {
 });
 
 gulp.task("fonts", function() {
-  return gulp.src(["src/static/fonts/*.woff", "src/static/fonts/*.woff2"])
+  return gulp.src(["src/static/fonts/*.woff", "src/static/fonts/*.woff2", "src/static/fonts/*.ttf"])
   .pipe(gulp.dest("build/static/fonts"))
 }); //перенос шрифтов в Public
 

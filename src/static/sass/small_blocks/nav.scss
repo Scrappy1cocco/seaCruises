@@ -1,11 +1,23 @@
 .nav {
-  width: 100%;
-  padding: 30px 20px;
+  position: absolute;
+  width: 90%;
+  padding: 10px 25px;
   font-family: RobotoSlabRegular;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 28px;
   background-color: #0d3351;
   &__link {
     color: #fff;
+  }
+  &--closed {
+    padding: 0;
+    .nav__link {
+      display: none;
+    }
+  }
+  &--opened {
+    .nav__link {
+      display: block;
+    }
   }
 }

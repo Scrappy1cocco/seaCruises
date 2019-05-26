@@ -3,8 +3,9 @@ extends ../layout/main
 block variables
   -  var title = "Главная"
 block content
-
-
+  include ../blocks/catalog
+block script
+  script(src="static/js/main.js")
 
       //- svg 
       //-   use(xlink:href = "static/img/svg/sprite.svg#stop-watch")  - добавление svg 
