@@ -1,4 +1,30 @@
 .catalog {
+  padding-top: 38px;
+  &__title {
+    width: 183px;
+    letter-spacing: 0.85px;
+    margin: 0 auto;
+    font-family: RobotoSlabRegular;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #0d3351;
+  }
+  &__sort {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin: 0 auto;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0d3351;
+  }
+  &__sort-value {
+    color: #0d3351;
+    font-style: italic;
+  }
   &__list {
     display: flex;
     flex-direction: column;
