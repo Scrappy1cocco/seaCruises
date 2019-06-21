@@ -1,29 +1,46 @@
 .catalog {
-  padding-top: 38px;
+  padding-top: 40px;
   &__title {
     width: 183px;
     letter-spacing: 0.85px;
     margin: 0 auto;
     font-family: RobotoSlabRegular;
     font-size: 20px;
-    line-height: 48px;
+    line-height: 40px;
     font-weight: 600;
-    color: #0d3351;
+    color: $base-text-color;
   }
   &__sort {
     display: flex;
-    justify-content: space-between;
-    width: 230px;
+    width: 220px;
     margin: 0 auto;
+    margin-bottom: 25px;
     font-family: Raleway;
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
-    color: #0d3351;
+    color: $base-text-color;
+  }
+  &__sort-text {
+    display: block;
+    width: 170px;
+    letter-spacing: 0.6px;
   }
   &__sort-value {
-    color: #0d3351;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    color: $base-text-color;
     font-style: italic;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      border: 4px solid transparent;
+      border-top: 4px solid $base-text-color;
+    }
+
   }
   &__list {
     display: flex;
@@ -31,4 +48,5 @@
     justify-content: center;
   }
 }
+
 
