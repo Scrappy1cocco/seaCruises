@@ -1,0 +1,28 @@
+.catalog__item {
+  background-color: #fff;
+  &-img {
+    margin-bottom: 24px;
+  }
+  &-content {
+    width: 265px;
+    padding-left: 25px;
+  }
+  &-title {
+    display: block;
+    position: relative;
+    width: 245px;
+    font-family: RobotoSlabRegular;
+    font-size: 18px;
+    font-weight: normal;
+    color: #00a2dd;
+  }
+}
+
+// ::after {
+//     content: '';
+//     position: absolute;
+//     top: 12px;
+//     right: 0;
+//     border: 4px solid transparent;
+//     border-left: 4px solid red;
+//   }

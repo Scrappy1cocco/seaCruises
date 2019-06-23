@@ -1,8 +1,8 @@
-.catalog__item-1 {
+.catalog__item-2 {
   .catalog__item-img {
     width: 290px;
     height: 228px;
-    background: url("../img/content/anapa-mobile.jpg") 50% 0 no-repeat;
+    background: url("../img/content/excursion-mobile.jpg") 50% 0 no-repeat;
   }
   .catalog__img-mark {
     position: relative;
@@ -11,19 +11,20 @@
     left: 178px;
     width: 89px;
     height: 82px;
-    padding-top: 28px;
-    background-color: #33c7fd;
+    padding-top: 35px;
+    background-color: #f20542;
     &::after {
       content: '';
       position: absolute;
       left: 0;
       bottom: -20px;
-      border-left: 44.5px solid #33c7fd;
-      border-right: 44.5px solid #33c7fd;
+      border-left: 44.5px solid #f20542;
+      border-right: 44.5px solid #f20542;
       border-bottom: 20px solid transparent;
     } 
   }
   .catalog__mark-text {
+    width: 100%;
     font-family: Raleway;
     font-size: 14px;
     line-height: 18px;
@@ -34,10 +35,3 @@
 }
 
 
-
-  
-
-
-
-
-    
