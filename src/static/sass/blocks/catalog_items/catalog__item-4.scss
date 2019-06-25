@@ -4,4 +4,9 @@
     height: 228px;
     background: url("../img/content/novoros-mobile.jpg") 50% 0 no-repeat;
   }
+  .catalog__item-title::after {
+    top: 34px;
+    right: 93px;
+    border-left: 4px solid #00a2dd;
+  }
 }

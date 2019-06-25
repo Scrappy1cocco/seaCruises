@@ -31,6 +31,11 @@
     text-transform: uppercase;
     text-align: center;
   }
+  .catalog__item-title::after {
+    top: 34px;
+    right: 152px;
+    border-left: 4px solid #00a2dd;
+  }
 }
 
 
