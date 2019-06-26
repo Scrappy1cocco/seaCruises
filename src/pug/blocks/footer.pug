@@ -3,17 +3,19 @@ include ../mixins/svg
 mixin footer
   footer.footer
     .footer__social
-      span.footer__social-text Будь на связи:
-      .footer__social-links
-        a.footer__social-link(href="#")
-          +svg('vk')
-        a.footer__social-link(href="#")
-          +svg('ok')
-        a.footer__social-link(href="#")
-          +svg('youtube')
-        a.footer__social-link(href="#")
-          +svg('insta')
+      .container
+        span.footer__social-text Будь на связи:
+        .footer__social-links
+          a.footer__social-link(href="#")
+            +svg('vk')
+          a.footer__social-link(href="#")
+            +svg('ok')
+          a.footer__social-link(href="#")
+            +svg('youtube')
+          a.footer__social-link(href="#")
+            +svg('insta')
     .footer__contacts
-      span.footer__contacts-phone 8 800 500-61-05
-      span.footer__contacts-text Круглосуточная поддержка
-      span.footer__contacts-copyright &copy; 2016 ООО "Городские Круизы"
+      .container
+        span.footer__contacts-phone 8 800 500-61-05
+        span.footer__contacts-text Круглосуточная поддержка
+        span.footer__contacts-copyright &copy; 2016 ООО "Городские Круизы"

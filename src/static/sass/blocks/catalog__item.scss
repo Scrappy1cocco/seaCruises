@@ -1,5 +1,6 @@
 .catalog__item {
   background-color: #fff;
+  margin-bottom: 54px;
   &-img {
     margin-bottom: 24px;
   }
@@ -11,6 +12,7 @@
     display: block;
     position: relative;
     width: 245px;
+    margin-bottom: 7px;
     font-family: RobotoSlabRegular;
     font-size: 18px;
     font-weight: normal;
@@ -24,5 +26,37 @@
       border-left: 4px solid red;
     }
   }
+  .catalog__route-title {
+    display: block;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    color: $base-text-color;
+  }
+  .catalog__route-length {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    color: $base-text-color;
+  }
+  .catalog__price {
+    display: flex;
+    align-items: center;
+  }
+  .catalog__price-value {
+    display: block;
+    font-family: RobotoSlabRegular;
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .catalog__price-old {
+    margin-top: 8px;
+    margin-left: 8px;
+    font-family: RobotoSlabRegular;
+    font-size: 18px;
+    text-decoration: line-through;
+    opacity: .55;
+  }
 }
-
