@@ -1,6 +1,8 @@
 .footer {
   padding-top: 55px;
+  margin-bottom: 40px;
   &__social {
+    margin-bottom: 15px;
     .container {
       display: flex;
       flex-direction: column;
@@ -8,6 +10,7 @@
     }
   }
   &__social-text {
+    margin-bottom: 6px;
     font-family: Raleway;
     font-size: 14px;
     line-height: 24px;
@@ -16,6 +19,7 @@
   &__social-links {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 150px;
   }
   &__social-link {
@@ -28,5 +32,43 @@
   &__link-icon {
     width: auto;
     fill: #fff;
+    &--vk {
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+    &--ok {
+      margin-left: 5px;
+      width: 20px;
+    }
+    &--youtube {
+      margin-left: 5px;
+      width: 20px;
+    }
+    &--insta {
+      margin-top: 3px;
+      margin-left: 3px;
+    }
+  }
+  &__contacts {
+    font-family: Raleway;
+    color: $base-text-color;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__contacts-phone {
+    font-family: RalewayBold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 0.85px;
+  }
+  &__contacts-text {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  &__contacts-copyright {
+    font-size: 14px;
   }
 }
