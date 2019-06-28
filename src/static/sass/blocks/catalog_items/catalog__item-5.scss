@@ -1,0 +1,14 @@
+.catalog__item-5 {
+  display: none;
+  .catalog__item-img {
+    width: 290px;
+    height: 228px;
+    background: url("../img/content/abrau-mobile.jpg") 50% 0 no-repeat;
+    background-size: cover;
+  }
+  .catalog__item-title::after {
+    top: 34px;
+    right: 110px;
+    border-left: 4px solid #00a2dd;
+  }
+}

@@ -51,6 +51,8 @@
   }
   &__btn {
     position: relative;
+    border: none;
+    cursor: pointer;
     &::after {
       content: '';
       position: absolute;
