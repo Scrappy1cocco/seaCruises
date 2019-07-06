@@ -2,33 +2,69 @@
 	width: 100%;
 	height: 583px;
 	background: url('../img/bg/bg-mobile.jpg') 50% 0 no-repeat;
-		@include above($screen-tablet) {
-		height: 600px;
-		background-image: url('../img/bg/bg-tablet.jpg');
-	}
+
+		@include above($screen-mobile) {
+			height: 600px;
+			background-image: url('../img/bg/bg-tablet.jpg');
+		}
+
 	&__top {
 		padding-top: 26px;
+
 		.container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			@include above($screen-tablet) {
+				flex-direction: row;
+				justify-content: flex-end;
+			}
 		}
 	}
+
+	&__pannel {
+		display: none;
+
+			@include above($screen-tablet) {
+				display: flex;
+				width: 512px;
+				height: 35px;
+			}
+	}
+
+	&__pannel-personal {
+		width: 150px;
+	}
+
+	&__personal-icon {
+		width: 10px;
+		height: 12px;
+	}
+
+	&__currency-icon {
+		width: 10px;
+		height: 12px;
+	}
+
 	&__logo-picture {
 		display: block;
 		margin: 0 auto;
 	}
+
 	&__title {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		font-family: RobotoSlabRegular;
+
 		.title__prew {
 			font-size: 20px;
 			line-height: 48px;
 			font-weight: 400;
 			color: #0d3351;
 		}
+
 		.title__main {
 			margin-bottom: 40px;
 			font-size: 50px;
@@ -39,10 +75,12 @@
 			color: #0d3351;
 		}
 	}
+
 	&__track {
 		position: relative;
 		width: 130px;
 		margin: 0 auto;
+
 		&-image {
 			position: absolute;
 			top: 8px;

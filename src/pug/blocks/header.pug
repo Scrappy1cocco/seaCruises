@@ -5,7 +5,20 @@ mixin header
     .header__top
       .container
         +navig('header__nav')
-        .header__pannel.pannel
+        .header__pannel
+          a.header__pannel-personal(href='#')
+            +svg('user','header__personal-icon', '')
+            span.header__personal-text Личный кабинет
+          a.header__pannel-currency
+            +svg('ruble','header__currency-icon', '')
+            span.header__currency-text Рубль
+          a.header__pannel-lang
+            span.header__lang-text Ru
+          .header__pannel-support
+            span.header__support-phone 8 800 500-61-05
+            span.header__support-text Круглосуточная поддержка
+
+
     .header__main
       .container
         .header__logo
