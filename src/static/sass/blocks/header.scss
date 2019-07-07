@@ -3,15 +3,19 @@
 	height: 583px;
 	background: url('../img/bg/bg-mobile.jpg') 50% 0 no-repeat;
 
-		@include above($screen-mobile) {
-			height: 600px;
-			background-image: url('../img/bg/bg-tablet.jpg');
-		}
+	@include above($screen-mobile) {
+		height: 600px;
+		background-image: url('../img/bg/bg-tablet.jpg');
+	}
 
 	&__top {
-		padding-top: 26px;
+
+		@include above($screen-tablet) {
+			padding-top: 38px;
+		}
 
 		.container {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -25,26 +29,63 @@
 
 	&__pannel {
 		display: none;
+		font-family: Raleway;
+		font-size: 14px;
+		color: $base-text-color;
 
-			@include above($screen-tablet) {
-				display: flex;
-				width: 512px;
-				height: 35px;
-			}
+		@include above($screen-tablet) {
+			display: flex;
+			justify-content: space-between;
+			width: 512px;
+			height: 35px;
+		}
 	}
 
 	&__pannel-personal {
 		width: 150px;
+		color: $base-text-color;
 	}
 
 	&__personal-icon {
 		width: 10px;
 		height: 12px;
+		margin-right: 8px;
+		fill: #33c7fd;
+	}
+
+	&__pannel-currency {
+		width: 75px;
+		color: $base-text-color;
 	}
 
 	&__currency-icon {
 		width: 10px;
 		height: 12px;
+		margin-right: 7px;
+		fill: #33c7fd;
+	}
+
+	&__pannel-lang {
+		width: 35px;
+		color: $base-text-color;
+	}
+
+	&__pannel-support {
+		display: flex;
+		flex-direction: column;
+		width: 143px;
+	}
+
+	&__support-phone {
+		font-family: RalewayBold;
+	}
+
+	&__support-text {
+		font-size: 10px;
+	}
+
+	&__main {
+		margin-top: 20px;
 	}
 
 	&__logo-picture {
