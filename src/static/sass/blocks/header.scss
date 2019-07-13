@@ -11,7 +11,7 @@
 	&__top {
 
 		@include above($screen-tablet) {
-			padding-top: 38px;
+			padding-top: 33px;
 		}
 
 		.container {
@@ -42,8 +42,17 @@
 	}
 
 	&__pannel-personal {
+		position: relative;
 		width: 150px;
 		color: $base-text-color;
+    &::after {
+	    content: '';
+	    position: absolute;
+	    top: 6px;
+	    right: 9px;
+	    border: 4px solid transparent;
+	    border-top: 4px solid $base-text-color;
+	  }
 	}
 
 	&__personal-icon {
@@ -54,8 +63,17 @@
 	}
 
 	&__pannel-currency {
+		position: relative;
 		width: 75px;
 		color: $base-text-color;
+    &::after {
+	    content: '';
+	    position: absolute;
+	    top: 6px;
+	    right: 5px;
+	    border: 4px solid transparent;
+	    border-top: 4px solid $base-text-color;
+	  }
 	}
 
 	&__currency-icon {
@@ -66,8 +84,17 @@
 	}
 
 	&__pannel-lang {
+		position: relative;
 		width: 35px;
 		color: $base-text-color;
+    &::after {
+	    content: '';
+	    position: absolute;
+	    top: 6px;
+	    right: 3px;
+	    border: 4px solid transparent;
+	    border-top: 4px solid $base-text-color;
+	  }
 	}
 
 	&__pannel-support {
@@ -86,6 +113,9 @@
 
 	&__main {
 		margin-top: 20px;
+		@include above($screen-tablet) {
+			margin-top: 71px;
+		}
 	}
 
 	&__logo-picture {
@@ -104,6 +134,10 @@
 			line-height: 48px;
 			font-weight: 400;
 			color: #0d3351;
+			@include above($screen-tablet) {
+				margin-bottom: 7px;
+				font-size: 26px;
+			}
 		}
 
 		.title__main {
@@ -114,6 +148,11 @@
 			text-transform: uppercase;
 			text-align: center;
 			color: #0d3351;
+			@include above($screen-tablet) {
+				margin-bottom: 27px;
+				font-size: 72px;
+				letter-spacing: -1.9px;
+			}
 		}
 	}
 
@@ -127,6 +166,9 @@
 			top: 8px;
 			left: -8px;
 			z-index: 1;
+			@include above($screen-tablet) {
+				top: 14px;
+			}
 		}
 	}
 }

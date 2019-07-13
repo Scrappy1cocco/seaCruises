@@ -30,7 +30,7 @@
   }
   &__sort-value {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 50px;
     color: $base-text-color;
     font-style: italic;
@@ -38,11 +38,12 @@
       content: '';
       position: absolute;
       top: 12px;
-      right: 0;
-      border: 4px solid transparent;
-      border-top: 4px solid $base-text-color;
+      right: 0px;
+      border: 4px solid $base-text-color;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent;
     }
-
   }
   &__list {
     display: flex;
