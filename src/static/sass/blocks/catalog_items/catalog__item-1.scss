@@ -3,12 +3,17 @@
     width: 290px;
     height: 228px;
     background: url("../img/content/anapa-mobile.jpg") 50% 0 no-repeat;
+    @include above($screen-tablet) {
+      width: 345px;
+      height: 272px;
+      background: url("../img/content/anapa-tablet.jpg") 50% 0 no-repeat;
+    }
   }
   .catalog__img-mark {
     position: relative;
     display: flex;
     top: -7px;
-    left: 178px;
+    left: 223px;
     width: 89px;
     height: 82px;
     padding-top: 28px;

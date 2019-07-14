@@ -3,6 +3,11 @@
     width: 290px;
     height: 228px;
     background: url("../img/content/novoros-mobile.jpg") 50% 0 no-repeat;
+    @include above($screen-tablet) {
+      width: 345px;
+      height: 272px;
+      background: url("../img/content/novoros-tablet.jpg") 50% 0 no-repeat;
+    }
   }
   .catalog__item-title::after {
     top: 34px;

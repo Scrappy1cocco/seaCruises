@@ -5,6 +5,10 @@
     height: 228px;
     background: url("../img/content/abrau-mobile.jpg") 50% 0 no-repeat;
     background-size: cover;
+    @include above($screen-tablet) {
+      width: 345px;
+      height: 272px;
+    }
   }
   .catalog__item-title::after {
     top: 34px;
